@@ -1,0 +1,32 @@
+{
+  "name": "test-chat-onestar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "migrate:up": "node-pg-migrate up",
+    "migrate:down": "node-pg-migrate down",
+    "migrate:redo": "node-pg-migrate redo",
+    "migrate:create": "node-pg-migrate create"
+  },
+  "author": "Onestar",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "node-pg-migrate": "^6.2.2",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
+    "yargs-parser": "^21.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "sequelize-cli": "^6.6.0"
+  }
+}

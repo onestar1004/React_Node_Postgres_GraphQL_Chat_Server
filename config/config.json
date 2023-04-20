@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "postgres1",
+    "password": "9592",
+    "database": "les_chat",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "role": "postgres1"
+  },
+  "production": {
+    "dialect": "postgres",
+    "use_env_variable": "DATABASE_URL",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
